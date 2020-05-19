@@ -1,0 +1,22 @@
+1    # This code takes your bill total and calculates teh tim based on the percentage you want to give.
+2    print("Hello this is a tip calculator, input what is the total of the bill and the percent you would like to tip."
+3          " By Fahad Aldulaimi", "For more visit github.com/FahadAldulaimi/APCS")
+4    
+5    # This part of the code takes the input from the user like bill total and tip percentage.
+6    print("What is the bill? : ")
+7    bill = float(input())
+8    print("Input the percentage that you would like to tip, so like 12, 15, 20, 25 : ")
+9    percent = float(input())
+10   
+11   # This line converts the tip number to a percentage
+12   percentage = percent / 100
+13   
+14   # This line takes the bill and multiplies it by the percentage giving us the tip amount.
+15   tip = (bill * percentage)
+16   
+17   # This line calculates the total amount of the bill and the tip, it also rounds the number so for example if it was .5 or greater it will round up if it is .5 or less it will round down.
+18   total = round(tip) + bill
+19   
+20   # This line displays the result to the user while giving him the tip amount first then giving him the total. 
+21   print("Your tip is $", round(tip), ", and the total amount is $", total)
+22   
